@@ -1,4 +1,4 @@
-{
+npm install --legacy-peer-deps{
   "name": "AshTerm",
   "version": "0.1.0",
   "private": true,
