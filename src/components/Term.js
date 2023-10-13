@@ -19,12 +19,12 @@ export default function Term() {
             ref={terminal}
             welcomeMessage={[
                 
-                "Welcome to Prakhar's portfolio!",
-                "---",
+               <span style={{color:"#48f62a"}}> "Welcome to Prakhar's portfolio!"<br></br>
+                <br></br>
                 "Type 'help' to see a list of commands.",
-                "---",
+               <br></br><br></br>
                 "try starting with 'cat' (〜￣▽￣)〜",
-                "---",
+             <br></br><br></br></span>
             ]}
             commands={{
                 clear: {
@@ -48,7 +48,7 @@ export default function Term() {
                     usage: 'cd <directory>',
                     fn: (...args) => {
                         if (args.length===1 && args[0]==='..') {
-                            if (prompt === 'you@/ashterm:~$ ') {
+                            if (prompt === 'you@/:~$ ') {
                                 return 'cannot go up'
                             } else {
                                 setPrompt(prompt.substring(0, prompt.lastIndexOf('/'))+":~$ ")
@@ -125,7 +125,7 @@ export default function Term() {
             styleEchoBack='fullInherit'
             contentStyle={{ color: '#ffb86c' , fontWeight: 'normal', paddingLeft: null}} // Text colour
             promptLabelStyle={{ color: '#ff5555' , fontWeight:'normal'}} // Prompt label colour
-            inputTextStyle={{ color: '#f1fa8c' , fontWeight: 'normal'}}
+            inputTextStyle={{ color: '#e4f33e' , fontWeight: 'normal'}}
             messageStyle={{ color: '#8be9fd' , fontWeight: 'normal', paddingLeft: null}}
             scrollBehavior='auto'
             noDefaults

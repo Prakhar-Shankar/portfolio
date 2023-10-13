@@ -37,7 +37,7 @@ export default {
             usage: 'linkedin',
             fn: () => {
                 window.open('https://www.linkedin.com/in/prakhar-shankar-24a788227/', '_blank')
-                return "opening github account..."
+                return "opening linkedin account..."
             }
         },
         twitter: {
@@ -81,7 +81,7 @@ export default {
             fn: () => {
                 return `
                 \n---------------------\n
-                    Front-end Development \n---------------------\n
+                    Front-end Development\n---------------------\n
                     Reactjs
                     Nextjs
                     HTML5

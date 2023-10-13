@@ -5,6 +5,7 @@
 }
 
 body {
+  background-image: url(https://i.pinimg.com/originals/e0/00/bf/e000bf3c9e35862c60c70c4db967b9b7.gif);
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +71,8 @@ pre {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #bd93f9;
+  background: #bd93f9 ;
+  
 }
 
 .container {
