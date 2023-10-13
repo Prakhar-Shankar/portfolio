@@ -21,30 +21,38 @@ export default {
             description: 'About Me.',
             usage: 'about',
             fn: () => {
-                return "About Me.\n---\nmale\n18\nstudent\nsolodev\nmelophile\nweeb\ndumb\napathetic\n---\n"
-            }
-        },
-        twitter: {
-            description: 'Opens my Twitter Handle.',
-            usage: 'twitter',
-            fn: () => {
-                window.open('https://twitter.com/_asheeshh', '_blank')
-                return "opening twitter handle..."
+                return "Passionate Web Developer adept in bringing forth expertise in creating, designing and maintaining websites. Equipped with a diverse and promising skill-set. Proficient in an assortment of technologies including HTML, CSS, Tailwind CSS, Vanilla JavaScript,TypeScript, NextJS, ReactJS, NodeJS, ExpressJS, MongoDB,PHP, SQL,and C/C++. Able to effectively self-manage during independent projects, as well as collaborate in a team setting"
             }
         },
         github: {
             description: 'Opens my GitHub Profile.',
             usage: 'twitter',
             fn: () => {
-                window.open('https://github.com/asrvd', '_blank')
+                window.open('https://github.com/Prakhar-Shankar', '_blank')
                 return "opening github account..."
+            }
+        },
+        linkedin: {
+            description: 'Opens my LinkedIn Profile.',
+            usage: 'linkedin',
+            fn: () => {
+                window.open('https://www.linkedin.com/in/prakhar-shankar-24a788227/', '_blank')
+                return "opening github account..."
+            }
+        },
+        twitter: {
+            description: 'Opens my Twitter Handle.',
+            usage: 'twitter',
+            fn: () => {
+                window.open('https://twitter.com/PrakharShankar2', '_blank')
+                return "opening twitter handle..."
             }
         },
         discord: {
             description: 'Opens my Discord Account.',
             usage: 'twitter',
             fn: () => {
-                window.open('https://discordapp.com/users/784363251940458516', '_blank')
+                window.open('https://discordapp.com/users/810054631866105856', '_blank')
                 return "opening discord account..."
             }
         },
@@ -57,13 +65,13 @@ export default {
                     english          - 70%
                     hindi            - 100%
                     gen-z-langauge   - 00%
-                    python           - 60%
-                    javascript       - 60%
+                    Next.js          - 70%
+                    React.js         - 80%
+                    python           - 40%
+                    javascript         70%
                     html5            - 90%
                     css3             - 80%
-                    ruby             - 40%
-                    rust             - 10% - [learning]
-                    go-lang          - 10% - [learning]\n---\n
+                    tailwind         - 80%
                 `
             }
         },
@@ -72,13 +80,28 @@ export default {
             usage: 'skills',
             fn: () => {
                 return `
-                    these are the skills I have.\n---\n
-                    procrastination  - 100%
-                    coding           - 50%
-                    studying         - 10%
-                    overthinking     - 100%
-                    social-skills    - 00%
-                    making-playlists - 100%\n---\n
+                \n---------------------\n
+                    Front-end Development \n---------------------\n
+                    Reactjs
+                    Nextjs
+                    HTML5
+                    CSS3
+                    Tailwind CSS
+                    Bootstrap \n---------------------\n
+                    Backend Development \n---------------------\n
+                    Nodejs
+                    Expressjs
+                    EJS
+                    APIs Handling
+                    DOM\n-----------\n
+                    Databases \n-----------\n
+                    MongoDB
+                    MySQL \n---------------------\n
+                    Programming Languages \n---------------------\n
+                    C
+                    C++
+                    Python 
+                    Javascript
                 `
             }
         },
@@ -87,66 +110,35 @@ export default {
             usage: 'projects',
             fn: () => {
                 return `
-                    Cool projects I have worked on.\n---\n
-                    'ashterm'                         | 'terminal portfolio'   | 'javascript'
-                    'octocolor'                       | 'github profile color' | 'javascript'
-                    'kanna-chan'                      | 'Discord-Bot'          | 'python'
-                    'wordinal'                        | 'wordle-on-terminal'   | 'javascript'
-                    'weeby.py'                        | 'API-wrapper'          | 'python'
-                    'gitbanner'                       | 'banner-generator'     | 'javascript'\n---\n
+                Clash Course - A fully functional deployed website which compares the courses from different
+                online platforms (like Udemy, courseEra etc...) on the basis of price and rating.
+                Skills used - React, Webscraping, python libraries - BeautifulSoup, JavaScript, Tailwind CSS \n \n
+                -------------------------------------------------------------------------------------------------------------
+                Query Verse - A full stack website which offers a QnA forum, users can ask or answer any questions. Users can
+                up vote or down vote the existing questions. Users can create their profile and can visit the profiles of other
+                users as well. It comes with the functionality of deleting and sharing the questions and answers also.
+                Skills used - React, MongoDB, ExpressJS, NodeJs, CSS (MERN)
+                --------------------------------------------------------------------------------------------------------------
+                Query Verse - A full stack website which offers a QnA forum, users can ask or answer any questions. Users can
+                up vote or down vote the existing questions. Users can create their profile and can visit the profiles of other
+                users as well. It comes with the functionality of deleting and sharing the questions and answers also.
+                Skills used - React, MongoDB, ExpressJS, NodeJs, CSS (MERN)
+                --------------------------------------------------------------------------------------------------------    
+                A chrome extension of AI based chatbot which retrieves data from open AI API, also used the same bot in
+                already existing websites.
                 `
             }
         },
-        editor: {
-            description: 'Details about my current editor',
-            usage: 'editor',
-            fn: () => {
-                return `
-                    Editor: Visual Studio Code\n
-                    Theme : Catpuccin\n
-                    Font  : Consolas
-                `
-            }
-        },
-        repo: {
-            description: "Opens this website's github repository.",
-            usage: 'repo',
-            fn: () => {
-                window.open("https://github.com/asrvd/AshTerm", '_blank')
-                return "opening repository..."
-            }
-        },
-        spotify: {
-            description: 'Get info about my recently played song.',
-            usage: 'spotify',
-            fn: async () => {
-                const item = await getnp()
-                return `
-                    Now Playing/Recently Played\n
-                    ---\n
-                    Song: ${item.song}\n
-                    Artist: ${item.artist}\n---\n
-                `
-            }
-        }
+        
+        
+       
     },
     overwrites:{
         help: {
             description: 'List all available commands',
             usage: 'help',
         },
-        cd: {
-            description: 'Change directory, not really, lol!',
-            usage: 'cd <directory>',
-        },
-        ls: {
-            description: 'List files in the current directory',
-            usage: 'ls',
-        },
-        mkdir: {
-            description: 'Make a directory',
-            usage: 'mkdir <directory>',
-        },
+       
         clear: {
             description: 'Clears the terminal',
             usage: 'clear'

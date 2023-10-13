@@ -8,18 +8,18 @@ export default function Term() {
     const cmds = commands.commands
     const owrs = commands.overwrites
     const terminal = React.createRef()
-    const [prompt, setPrompt] = React.useState('you@/ashterm:~$ ')
+    const [prompt, setPrompt] = React.useState('prakhar@/portfolio:~$ ')
     const [home, sethome] = React.useState('ashterm')
     const [dir, setdir] = React.useState({
         'ashterm': []
     })
+    
     return (
         <Terminal
             ref={terminal}
             welcomeMessage={[
-                "Welcome to ashterm!",
-                "---",
-                "This is a terminal style website made with React.",
+                
+                "Welcome to Prakhar's portfolio!",
                 "---",
                 "Type 'help' to see a list of commands.",
                 "---",
