@@ -1,7 +1,7 @@
 import Terminal from 'react-console-emulator'
 import commands from '../components/Commands/commands.js'
 import React from 'react'
-import figlet from 'figlet';
+
 import getcat from '../utils/cat'
 
 export default function Term() {

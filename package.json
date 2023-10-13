@@ -1,5 +1,5 @@
-npm install --legacy-peer-deps{
-  "name": "AshTerm",
+ {
+  "name": "prexy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
