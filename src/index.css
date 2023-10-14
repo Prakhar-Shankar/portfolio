@@ -3,9 +3,9 @@
   margin: 0;
   scroll-behavior: auto;
 }
-
+/* https://i.gifer.com/Me3P.gif */
 body {
-  background-image: url(https://i.pinimg.com/originals/e0/00/bf/e000bf3c9e35862c60c70c4db967b9b7.gif);
+  background-image: url(https://i.gifer.com/Me3P.gif);
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;

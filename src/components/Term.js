@@ -43,6 +43,15 @@ export default function Term() {
                         terminal.current.pushToStdout(<img src={url} width="500px" height="380px" alt='cat'></img>)
                     }
                 },
+                prakhar: {
+                    description: 'Get prakhar',
+                    usage: 'prakhar',
+                    fn: async () => {
+                        const url = await getcat()
+                        terminal.current.pushToStdout("getting prakhar for you..\n---\n")
+                        terminal.current.pushToStdout(<img src={"https://avatars.githubusercontent.com/u/97254881?s=400&u=b07c8126f89d3d73c2f09e6c01f853752fc449be&v=4"} width="500px" height="380px" alt='cat'></img>)
+                    }
+                },
                 cd: {
                     description: 'Change directory, not really, lol!',
                     usage: 'cd <directory>',

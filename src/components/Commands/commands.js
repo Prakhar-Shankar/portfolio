@@ -133,6 +133,7 @@ export default {
         
        
     },
+    
     overwrites:{
         help: {
             description: 'List all available commands',
@@ -146,6 +147,10 @@ export default {
         cat: {
             description: 'Get a cute cat image.',
             usage: 'cat',
+        },
+        prakhar: {
+            description: 'Get Prakhar',
+            usage: 'prakhar',
         }
     }
 }
